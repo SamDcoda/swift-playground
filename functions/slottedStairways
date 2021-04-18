@@ -1,0 +1,24 @@
+func collectGemTurnAround() {
+ moveForward()
+ moveForward()
+ collectGem()
+ turnLeft()
+ turnLeft()
+ }
+ 
+func solveRow() {
+ collectGemTurnAround()
+ moveForward()
+ moveForward()
+ collectGemTurnAround()
+ moveForward()
+ moveForward()
+ turnLeft()
+ turnLeft()
+ turnLeft()
+ moveForward()
+ turnLeft() 
+}
+solveRow()
+solveRow()
+solveRow() 
