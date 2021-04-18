@@ -1,0 +1,22 @@
+func moveThenToggle() {
+    moveForward()
+    moveForward()
+    toggleSwitch()
+}
+func solveStairs() {
+    moveThenToggle()
+    turnLeft()
+    turnLeft()
+    moveForward()
+    moveForward()
+}
+
+solveStairs()
+solveStairs()
+turnLeft()
+moveThenToggle()
+solveStairs()
+moveForward()
+moveForward()
+moveThenToggle()
+moveThenToggle()
