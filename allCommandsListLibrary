@@ -1,0 +1,99 @@
+moveForward()
+collectGem()
+turnLeft()
+toggleSwitch()
+
+func turnRight() {
+  turnLeft()
+  turnLeft()
+  turnLeft()
+}
+func gemSwitch() {
+  moveForward()
+  collectGem()
+  moveForward()
+  toggleSwitch()
+  moveForward()
+}
+ func collectGems() {
+ collectGem()
+  moveForward()
+  collectGem()
+  moveForward()
+}
+func turnAround() {
+ turnLeft()
+ turnLeft()
+}
+
+func solveStairs() {
+  moveForward()
+  collectGem()
+  turnAround()
+  moveForward()
+}
+func collectGemTurnAround() {
+ moveForward()
+ moveForward()
+ collectGem()
+ turnLeft()
+ turnLeft()
+ }
+ 
+func solveRow() {
+ collectGemTurnAround()
+ moveForward()
+ moveForward()
+ collectGemTurnAround()
+ moveForward()
+ moveForward()
+ turnLeft()
+ turnLeft()
+ turnLeft()
+ moveForward()
+ turnLeft() 
+}
+func moveThenToggle() {
+    moveForward()
+    moveForward()
+    toggleSwitch()
+}
+func solveStairs() {
+    moveThenToggle()
+    turnLeft()
+    turnLeft()
+    moveForward()
+    moveForward()
+}
+
+for i in 1 ... 5 {
+  moveForward()
+  moveForward()
+  collectGem()
+  moveForward()
+}
+//multiple steps 7 x2
+//repeate 3 times
+
+func moveToggleGoBack() {
+    for i in 1 ... 7 {
+        moveForward()
+    }
+    turnLeft()
+    turnLeft()
+    toggleSwitch()
+    for i in 1 ... 7 {
+        moveForward()
+    }
+    turnRight()
+}
+func solveStairs() {
+    moveForward()
+    moveForward()
+    turnRight()
+    moveToggleGoBack()
+}
+
+for i in 1 ... 3 {
+    solveStairs()
+}
