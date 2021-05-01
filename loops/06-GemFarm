@@ -1,24 +1,30 @@
 
-    /*
- func getAndTurn() {
- turnLeft()
- moveForward()
- toggleSwitch()
- moveForward()
- toggleSwitch()
- turnLeft()
- turnLeft()
- moveForward()
- moveForward()
- moveForward()
- moveForward()<#function body#>
- }
- for i in 1 ... <#T##number##Int#> {
- <#code#>
- }
- collectGem()
- toggleSwitch()
- 
- */
 
+func toggleSwitches() {
+    turnLeft()
+    moveForward()
+    toggleSwitch()
+    moveForward()
+    toggleSwitch()
+    turnLeft()
+    turnLeft()
+    moveForward()
+    moveForward()
+}
+func collectGemes() {
+    moveForward()
+    collectGem()
+    moveForward()
+    collectGem()
+    turnLeft()
+    turnLeft()
+    moveForward()
+    moveForward()
+    turnRight()
+    moveForward()
+}
 
+for i in 1 ... 3 {
+    toggleSwitches()
+    collectGemes()
+}
